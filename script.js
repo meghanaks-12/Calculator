@@ -1,4 +1,5 @@
 let currentValue = "";
+const trigSection = document.getElementById('trigSection');
 
 function appendValue(value){
     const resultField = document.getElementById("result");
@@ -42,9 +43,7 @@ function undo(){
 }
 
 function trignometry(){
-    const trigSection = document.querySelector(".trignometry");
-    trigSection.classList.toggle("hidden");
-    updateDisplay();
+    trigSection.classList.toggle("show");
 
 }
 
